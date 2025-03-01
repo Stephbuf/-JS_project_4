@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <form>
+
+        <div class="form-group">
+            <label for="title">Title</label><br>
+            <input required minlength="2" maxlength="15" type="title">
+        </div>
+        <br>
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description" required minlength="2" maxlength="250" 
+        style="resize: both; overflow: auto;" rows="5" cols="21"></textarea>
+
+        <br>
+        <div class="form-group">
+            <label for="category">Category</label><br>
+            <input required minlength="2" maxlength="50" type="category">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="priority level">Priority Level:</label>
+            <select>
+                <option>Select an item</option>
+                <option>Low</option>
+                <option>High</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="progress level">Progress Level:</label>
+            <select>
+                <option>Select an item</option>
+                <option>Pending</option>
+                <option>Completed</option>
+            </select>
+        </div>
+        <br>
+        <div class="sumbit-button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
